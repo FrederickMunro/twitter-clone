@@ -51,5 +51,4 @@ const Nav = styled.nav`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  pointer-events: none;
 `
