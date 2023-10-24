@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import styled from "styled-components";
 
 import Left from "./components/Left";
@@ -18,6 +18,7 @@ function App() {
 			<Messages />
 			<Left />
 			<Routes>
+				<Route path="/" element={ <Navigate to='home' /> } />
 				<Route path='/home' element={ <Home /> } />
 				<Route path='/explore' element={ <Explore /> } />
 				<Route path='/notifications' element={ <Notifications /> } />
