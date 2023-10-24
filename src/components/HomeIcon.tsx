@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import Twitter from "../assets/twitter.svg";
@@ -5,9 +6,11 @@ import Twitter from "../assets/twitter.svg";
 const HomeIcon = () => {
 
   return(
-    <Button>
-      <Icon src={Twitter} />
-    </Button>
+    <Link to='/home'>
+      <Button>
+        <Icon src={Twitter} />
+      </Button>
+    </Link>
   )
 }
 
