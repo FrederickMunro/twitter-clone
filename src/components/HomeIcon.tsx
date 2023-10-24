@@ -14,7 +14,6 @@ const HomeIcon = () => {
 export default HomeIcon
 
 const Button = styled.button`
-  pointer-events: none;
   height: 60px;
   width: 60px;
   display: flex;
