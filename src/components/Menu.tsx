@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import MenuItem from "./MenuItem";
@@ -25,11 +26,13 @@ const Menu = () => {
       {
         MenuItemsList.map(item => {
           return(
-            <MenuItem
-              name={item.name}
-              icon={item.icon}
-              key={item.name}
-            />
+            <StyledLink to={`/${item.name.toLowerCase()}`}>
+              <MenuItem
+                name={item.name}
+                icon={item.icon}
+                key={item.name}
+              />
+            </StyledLink>
           )
         })
       }
@@ -44,4 +47,9 @@ const Nav = styled.nav`
   flex-direction: column;
   justify-content: space-around;
   height: 350px;
+`
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  pointer-events: none;
 `
