@@ -26,7 +26,7 @@ const Button = styled.button`
   min-height: 30px;
   height: 10vh;
   max-height: 50px;
-  padding: 9px 40px 11px 15px;
+  padding: 9px 20px 11px 10px;
   border-radius: 30px;
   align-self: flex-start;
   &:hover {
@@ -42,5 +42,4 @@ const Icon = styled.img`
 const H3 = styled.h3`
   font-size: 23px;
   font-weight: lighter;
-  letter-spacing: 2px;
 `
