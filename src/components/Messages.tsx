@@ -63,6 +63,7 @@ const H3 = styled.h3`
 `
 
 const Button = styled.button`
+  pointer-events: none;
   width: 30px;
   height: 30px;
   border: none;
