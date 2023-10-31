@@ -5,7 +5,6 @@ import ArrowUp from "../assets/arrowup.svg";
 import ArrowDown from "../assets/arrowdown.svg";
 
 interface Props {
-  class: string;
   count: number;
 }
 
@@ -29,7 +28,7 @@ const Messages = () => {
           <Icon src={isOpen ? ArrowDown : ArrowUp} />
         </Button>
       </Header>
-      <Body class={className} count={count}>
+      <Body className={className} count={count}>
 
       </Body>
     </Container>
@@ -85,7 +84,7 @@ const Icon = styled.img`
 
 const Body = styled.div<Props>`
   height: 0px;
-  animation: ${props => (props.class === "open" ? 'openAnim' : props.count > 0 ? 'closeAnim' : '')} 0.2s ease-in 0s forwards;
+  animation: ${props => (props.className === "open" ? 'openAnim' : props.count > 0 ? 'closeAnim' : '')} 0.2s ease-in 0s forwards;
   &.open {
     @keyframes openAnim {
       from {
